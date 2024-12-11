@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Name: Michael Trent
+File Name: contact.html
+Date: 12/9/2024
+-->
+<html lang="en">
+
+<head> 
+    <title>The Guild Advocate: Contact</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="nav-logo">The Guild Advocate</a>
+                <div class="nav-menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            
+        </nav>
+        
+        <header>
+
+            <div>
+                <a href="index.html"><img src="images/Guild_Advocate_Main.png" alt="Guild Advocate Main"></a>
+            </div>
+
+        </header>
+        
+        <!-- Use as the main content area -->
+        <main>
+    
+            <form action="mailto:guildadvocate91821@outlook.com" method="post" enctype="text/plain">
+                <div class="contact_text">
+                    <h3>You can Contact us here</h3>
+                </div>
+                
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+    
+                <label>Are you a member of our Realm?</label>
+                <input type="radio" id="yes" name="membership" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="membership" value="no">
+                <label for="no">No</label>
+                <br>
+    
+                <label>Interests:</label>
+                <input type="checkbox" id="events" name="interests" value="events">
+                <label for="events">Events</label>
+                <input type="checkbox" id="updates" name="interests" value="updates">
+                <label for="updates">Updates</label>
+                <br>
+    
+                <label for="contact_reason">Reason for Contact:</label>
+                <select id="contact_reason" name="contact_reason" required>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+
+                <input type="submit" value="Submit" id="submit" class="btn">
+            
+        </main>
+         
+        <footer>
+
+           <div>
+               <p><a href="mailto:guildadvocate91821@outlook.com">guildadvocate91821@outlook.com</a></p>
+           </div>
+        
+           <div class="social">
+               <a href="https://discord.gg/3A2e5BnGaM"><img src="Images/discord-logo.png" alt="Discord logo"></a>
+               <a href="https://en.wikipedia.org/wiki/Minecraft"><img src="Images/Untitled.png" alt="Wiki Logo"></a>
+           </div>
+        
+        </footer>
+
+        <script src="scripts/script.js"></script>
+        
+    </body>
+
+</html>

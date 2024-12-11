@@ -1,0 +1,360 @@
+/*
+Name: Michael Trent
+File Name: styles.css
+Date: 12/9/2024
+*/
+
+/* Reset CSS */
+
+body, header, nav, main, html, footer, img, h1, h2, h3, p, ul, aside, figure, figcaption {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/* Body Style Rules */
+body {
+    background-color: whitesmoke;
+}
+
+/* Image Style Rules */
+img {
+    max-width: 100%;
+    display: block;
+}
+figure {
+    margin: 3% auto;
+}
+
+/* Gallery Page Rules */
+.gallery_top {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 10px;
+}
+.gallery_top img {
+    max-height: 400px;
+}
+.gallery_top figure {
+    border: 4px double #020202;
+    padding: 1px;
+    margin-top: 1%;
+
+}
+.gallery_top figcaption {
+    border: 4px double #020202;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 1px;
+    text-align: center;
+}
+.gallery_text h1 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2.5em;
+}
+.gallery_text h3 {
+    text-align: center;
+    font-size: 2em;
+}
+.gallery_text p {
+    text-align: center;
+    font-size: 1.25em;
+}
+.gallery_others {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+}
+.gallery_others img {
+    max-height: 225px;
+}
+.gallery_others figure {
+    border: 3px double #020202;
+    padding: 1px;
+}
+.gallery_others figcaption {
+    border: 3px double #020202;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 1px;
+    text-align: center;
+}
+
+header img {
+    border-bottom: 10px solid #ec1c24;
+}
+
+/* Nav Style Rules */
+nav {
+    background-color: #ec1c24;
+    font-family: "Pixelify sans", "Open sans";
+    position: sticky;
+    top: 0;
+
+}
+.nav-logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.35em;
+    color: #2b2a2a;
+    padding: .5em 1.5em;
+}
+
+.nav-list a:hover {
+    color: #ffffff;
+    background-color: #971217;
+    opacity: 1;
+}
+
+.nav-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+/* Header Style Rules */
+
+/* Main Style Rules */
+main {
+    font-family: "Pixelify sans", "open sans";
+}
+main h2 {
+    color: #ec1c24;
+    text-align: center;
+    padding-top: 20px;
+ }
+ main h3 {
+    text-align: center;
+ }
+ main ol{
+    padding-left: 45%;
+    padding-right: 25%;
+ }
+
+ /* Article Style Rules */
+ article {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px;
+}
+
+article h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+article p {
+    margin: 5px 0;
+}
+
+
+article img {
+    max-height: 7.5em;
+    border-radius: 5px;
+}
+article a {
+    color: #ec1c24;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.article_container{
+    text-align: center;
+}
+.article_headine{
+    text-align: center;
+    font-family: "Jacquard 12";
+    font-size: x-large;
+}
+.article_content{
+    text-align: center;
+    width: 22%;
+    padding-left: 38%;
+    padding-right: 38%;
+}
+.article_content p{
+    margin-bottom: 15px;
+}
+/* Footer Style Rules */
+footer {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #ec1c24;
+    color: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+
+footer a {
+    color:#ffffff;
+    font-family: "Open sans";
+}
+
+.social { 
+    display: block; 
+    padding: 2% 1% 1% 95%;
+    margin-top: 1%;
+
+}
+
+/* Style Rules for contacts */
+.contact_text {
+    padding-left: 40%;
+}
+.contact_text h3 {
+    font-size: 1.5em;
+    border: 2px dashed #020202;
+    width: 29%;
+
+}
+form {
+    background-color: whitesmoke;
+    padding: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ec1c24;
+    border-top: none;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 7%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ec1c24;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #bf1619;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+table th {
+    background-color: #ec1c24;
+    color: whitesmoke;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #2b2a2a93;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #2b2a2a6c;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Style Rules for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    main ol {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .article_content {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ec1c24;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .nav-menu-icon {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+}
